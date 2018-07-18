@@ -43,7 +43,7 @@
             this.textNom.Name = "textNom";
             this.textNom.Size = new System.Drawing.Size(149, 26);
             this.textNom.TabIndex = 0;
-            this.textNom.TextChanged += new System.EventHandler(this.tNom);
+            this.textNom.TextChanged += new System.EventHandler(this.TNom);
             // 
             // textSurname
             // 
@@ -51,7 +51,7 @@
             this.textSurname.Name = "textSurname";
             this.textSurname.Size = new System.Drawing.Size(149, 26);
             this.textSurname.TabIndex = 1;
-            this.textSurname.TextChanged += new System.EventHandler(this.tSurname);
+            this.textSurname.TextChanged += new System.EventHandler(this.TSurname);
             // 
             // textDNI
             // 
@@ -59,7 +59,7 @@
             this.textDNI.Name = "textDNI";
             this.textDNI.Size = new System.Drawing.Size(149, 26);
             this.textDNI.TabIndex = 2;
-            this.textDNI.TextChanged += new System.EventHandler(this.tDni);
+            this.textDNI.TextChanged += new System.EventHandler(this.TDni);
             // 
             // label1
             // 
@@ -98,7 +98,7 @@
             this.bAdd2.TabIndex = 6;
             this.bAdd2.Text = "Añadir";
             this.bAdd2.UseVisualStyleBackColor = true;
-            this.bAdd2.Click += new System.EventHandler(this.bAdd);
+            this.bAdd2.Click += new System.EventHandler(this.BAdd);
             // 
             // Form2
             // 

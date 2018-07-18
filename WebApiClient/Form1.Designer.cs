@@ -44,10 +44,10 @@
             this.bShow.UseVisualStyleBackColor = true;
             this.bShow.Click += new System.EventHandler(this.Mostrar);
             // 
-            // bAdd
+            // BAdd
             // 
             this.bAdd.Location = new System.Drawing.Point(428, 329);
-            this.bAdd.Name = "bAdd";
+            this.bAdd.Name = "BAdd";
             this.bAdd.Size = new System.Drawing.Size(119, 45);
             this.bAdd.TabIndex = 1;
             this.bAdd.Text = "Añadir";

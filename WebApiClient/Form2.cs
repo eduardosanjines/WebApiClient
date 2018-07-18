@@ -22,25 +22,24 @@ namespace WebApiClient
 
         }
 
-        private void bAdd(object sender, EventArgs e)
+        private void BAdd(object sender, EventArgs e)
         {
-            HttpApiController api = new HttpApiController();
-            List<AlumnoModelView> alumnos = new List<AlumnoModelView>();
-
-
+            AlumnoModelView amv = new AlumnoModelView(textNom.Text, textSurname.Text,textDNI.Text);
+            HttpApiController controller = new HttpApiController();
+            controller.AddAlumn(amv);
         }
 
-        private void tNom(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tSurname(object sender, EventArgs e)
+        private void TNom(object sender, EventArgs e)
         {
 
         }
 
-        private void tDni(object sender, EventArgs e)
+        private void TSurname(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TDni(object sender, EventArgs e)
         {
 
         }
