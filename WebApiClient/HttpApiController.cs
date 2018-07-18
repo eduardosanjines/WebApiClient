@@ -5,8 +5,6 @@ using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Resources;
-using System.Text;
 using System.Threading.Tasks;
 using WebApiClient.Properties;
 
@@ -51,8 +49,8 @@ namespace WebApiClient
 
                 // Especificamos en el header que se trata de un tipo JSON
                 byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
-                var result = await client.PostAsync(ConfigurationSettings.AppSettings["añadirAlumnos"].ToString(), byteContent);
+                var appSettings = ConfigurationManager.AppSettings;
+                var result = await client.PostAsync(appSettings["añadirAlumnos"].ToString(), byteContent);
 
             }
             catch (Exception ex)
